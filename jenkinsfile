@@ -1,4 +1,5 @@
-node {
+pipeline {
+    agent any
 
     def mavenHome = tool 'maven-3.6.0' // Refers to a global tool configuration for Maven called 'maven-3.6.0'
     env.PATH="${env.PATH}:$mavenHome/bin"
